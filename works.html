@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>material murmur - works</title>
+    <link rel="icon" href="img/CI-2.png">
+    <link rel="stylesheet" href="01.css">
+    <link rel="stylesheet" href="works.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="img/CI-1.png" alt="logo">
+        </div>
+        <nav>
+            <a href="index.html">works</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <main class="works-layout">
+        <!-- 좌측 -->
+        <div class="works-left-wrap">
+            <!-- 게시판 -->
+        <div class="works-left">
+            <table class="works-table">
+                <thead>
+                    <tr>
+                        <th>no.</th>
+                        <th>title</th>
+                        <th>type</th>
+                        <th>year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="showProject('project1')">
+                        <td>1</td>
+                        <td>뾰족한 손잡이</td>
+                        <td>object</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr onclick="showProject('project2')">
+                        <td>2</td>
+                        <td>온실</td>
+                        <td>architecture</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr onclick="showProject('project3')">
+                        <td>3</td>
+                        <td>부드러운 손잡이</td>
+                        <td>object</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+            </table>
+
+           <div class="works-info">
+            <p>...</p>
+            </div>
+        </div>
+
+            <!-- 프로젝트 클릭시 뜨는 설명 박스 -->
+            <div class="project-desc-box" id="projectDesc">
+                <p id="projectDescText"></p>
+            </div>
+        </div>
+
+        <!-- 우측 -->
+        <div class="works-detail">
+            <div id="project1" class="project-content">
+                <img src="img/drawings/door-1.png" alt="project 01">
+                <p>프로젝트 01 설명 텍스트</p>
+            </div>
+            <div id="project2" class="project-content">
+                <img src="img/projects/p-04-1.jpg" alt="project 02">
+                <p>프로젝트 02 설명 텍스트</p>
+            </div>
+            <div id="project3" class="project-content">
+                <img src="img/projects/p-01.png" alt="project 03">
+                <p>프로젝트 03 설명 텍스트</p>
+            </div>
+        </div>
+    </main>
+
+            <footer>
+                <p>&copy; 2026 material murmur</p>
+
+                <!-- 인스타그램 연결 -->
+                <a href="https://www.instagram.com/material_murmur" target="_blank" class="footer-insta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="black"/>
+            </svg>
+         </a>
+        </footer>
+
+    <script src="works.js"></script>
+</body>
+</html>
