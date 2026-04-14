@@ -32,15 +32,24 @@ header nav{
     margin-left: auto;
 }
 
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 body{
     overflow: hidden;
     overflow-x: hidden;
     font-family: 'DM Sans', 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .split{
     display: flex;
-    height: calc(100vh - 60px - 40px);
+    height: calc(100vh - 50px - 35px);
+    margin-top: 50px;
 }
 
 .left, .right{
@@ -52,7 +61,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
 }
 
 .left img {
@@ -102,6 +111,8 @@ footer p{
     margin-left: auto;
     display: flex;
     align-items: center;
+    color: black;
+    text-decoration: none;
 }
 
 /* about 모달 창 */
@@ -221,6 +232,10 @@ form {
         flex-direction: column;
         margin-left: 0;
         gap: 8px;
+    }
+
+    .intro-box{
+        display: none;
     }
 
     .modal-overlay {
